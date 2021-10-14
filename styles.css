@@ -31,6 +31,7 @@ body {
 #input-text{
     grid-area: input;
     padding: 25px 65px;
+    text-align: center;
 }
 #display-info{
     grid-area: display;
@@ -44,4 +45,12 @@ body {
 }
 #reviews{
     grid-area: review;
+}
+#error-msg{
+    color: red;
+    font-weight: 600px;
+    text-align: center;
+}
+#list-reviews li{
+    padding: 5px;
 }
