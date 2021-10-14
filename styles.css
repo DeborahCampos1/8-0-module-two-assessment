@@ -1,0 +1,45 @@
+body {
+    display: grid;
+    background-color: lavender;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    " . header header header header"
+    ". . . h1 ." 
+    ". input input . ."
+    ". display display display ."
+    ". submit submit submit ."
+    ". review review review .";
+}
+#header{
+    background-color: skyblue;
+    display: inline;
+    grid-area: header;
+    width: 75%;
+    height: auto;
+    margin: 5px;
+    padding: 0px 25px;
+}
+#header h1{
+    grid-area: h1;
+    text-align: right;
+    padding: 5px 0px;
+}
+#header img{
+    width: 50%;
+    height: 50%;
+}
+#input-text{
+    grid-area: input;
+    padding: 25px 65px;
+}
+#display-info{
+    grid-area: display;
+    text-align: center;
+}
+#input-form{
+    grid-area: submit;
+    text-align: center;
+}
+#reviews{
+    grid-area: review;
+}
