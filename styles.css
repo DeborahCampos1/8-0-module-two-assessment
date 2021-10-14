@@ -39,6 +39,8 @@ body {
 #input-form{
     grid-area: submit;
     text-align: center;
+    margin: 5px;
+    padding: 25px;
 }
 #reviews{
     grid-area: review;
