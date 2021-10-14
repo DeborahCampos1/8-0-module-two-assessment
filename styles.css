@@ -4,7 +4,7 @@ body {
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: 
     " . header header header header"
-    ". . . h1 ." 
+    " . img img . h1"
     ". input input . ."
     ". display display display ."
     ". submit submit submit ."
@@ -12,21 +12,29 @@ body {
 }
 #header{
     background-color: skyblue;
-    display: inline;
     grid-area: header;
     width: 75%;
-    height: auto;
+    height: 200px;
     margin: 5px;
     padding: 0px 25px;
 }
-#header h1{
+.header{
+    display: inline;
+}
+ .header h1{
+    /* display: inline; */
     grid-area: h1;
-    text-align: right;
-    padding: 5px 0px;
+    width: 50%;
+    height: 100px;
+    margin: auto;
+    padding: 35px;
+    
 }
 #header img{
     width: 50%;
-    height: 50%;
+    height: 200px;
+    grid-area: img;
+    margin: auto;
 }
 #input-text{
     grid-area: input;
