@@ -20,7 +20,7 @@ fetch("https://ghibliapi.herokuapp.com/films")
 
         let released = movies.filter((movie)=>{
             return movie.title === e.target.value
-        })
+        });
     
     let year = document.createElement("p")
     let description = document.createElement("p")
