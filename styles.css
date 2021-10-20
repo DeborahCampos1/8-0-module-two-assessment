@@ -4,7 +4,7 @@ body {
     grid-template-columns: repeat(5, 1fr);
     font-family: monospace;
     grid-template-areas: 
-    " . header header header header"
+    " . header header header ."
     ". input input . ."
     ". display display display ."
     ". submit submit submit ."
@@ -12,16 +12,16 @@ body {
     grid-gap: 10px;
     border: 5px solid #c2c3d3;
     margin: 10px;
+    /* padding: 20px; */
 }
 #header{
     background-color: skyblue;
     background-image: linear-gradient(rgb(206, 171, 171), rgb(221, 221, 214), skyblue);
     display: grid;
-    grid-template-areas: " img h1 ";
-    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img h1 ";
+    /* grid-template-columns: 1fr 1fr; */
     grid-area: header;
     text-align: center;
-    width: 75%;
     height: 200px;
     grid-gap: 5px;
     border: 5px;
@@ -33,7 +33,7 @@ body {
     font-weight: 300;
     font-size: 3em;
     margin: 0 auto;
-    padding: 0 140px 0 0;
+    padding: 0 10px 0 0;
     display: inline;
     margin-bottom: 0;
   }
@@ -100,7 +100,7 @@ body {
     text-align: right;
     font-size: 25px;
     width: auto;
-    padding: 0px,25px;
+    /* padding: 0px,25px; */
 }
  img{
     height: 200px;
@@ -113,6 +113,9 @@ body {
     text-align: center;
     margin: auto;
 }
+/* #form-id{
+  text-align: center;
+} */
 #display-info{
     grid-area: display;
     text-align: center;
@@ -120,11 +123,12 @@ body {
 #input-form{
     grid-area: submit;
     text-align: center;
+    padding: 10px;
     margin: 5px;
 }
 #reviews{
     grid-area: review;
-    padding: 10px;
+    padding: 10px 25px;
 }
 #review-input{
     width: 200px;
